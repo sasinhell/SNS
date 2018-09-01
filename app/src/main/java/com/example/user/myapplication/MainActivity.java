@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity implements Gota.OnRequestPer
                 if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED){
                    // startActivity(intent);
                     SmsManager.getDefault().sendTextMessage(phone_number.getText().toString(), null, text.getText().toString(), null, null);
-                }
             }
+        }
         });
     }
     @Override
